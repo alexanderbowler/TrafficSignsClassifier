@@ -1,0 +1,4 @@
+These commands setup the proper pathing for cuda, might have to run each time open the enviroment, or might just have to run each time we setup the enviroment.
+export PATH=/usr/local/cuda-12.4/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda/lib64
+python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
