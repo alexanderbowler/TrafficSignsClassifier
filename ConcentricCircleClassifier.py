@@ -93,7 +93,7 @@ checkpoint_filepath = "./tmp/ckpt/checkpoint.model.keras"
 ckpts = len(os.listdir("./tmp/ckpt"))
 print(ckpts)
 
-if(False):
+if(ckpts == 0):
     print("Initialized new model")
 
     #model shape construction
